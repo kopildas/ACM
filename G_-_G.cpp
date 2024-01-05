@@ -3,8 +3,8 @@ using namespace std;
 
 typedef long long lg;
 
-//const lg N = 10000000; // BIG LOOOOOOOOOL 7
-// lg ar[N];
+const lg N = 10000000; // BIG LOOOOOOOOOL 7
+lg ar[N];
 
 int main()
 {
@@ -14,21 +14,35 @@ int main()
     lg ca=1;
     while (t--)
     {
-        lg theta,x,y,z;
-        cin>>theta>>x>>y>>z;
-
-        x=x*z;
-        y=y*z;
-        lg dis=((x*x)+(y*y));
-        double pi = 2*acos(0.0);
-        double d=cos(theta*pi/180);
-        d=double(2.0*x*y*d);
-        double ans=sqrt(dis-d);
-        printf("Case %lld: %.2lf\n",ca,ans);
+        
+        cin>>k;
+        vector<lg>v,v2;
+        vector<lg>::iterator it;
+        set<lg>s;
+ 
+    
+        lg sum=0;
+        
+        for ( i = 0; i < k; i++)
+        {
+            cin>>h;
+            s.insert(h);
+            
+        }
+        for ( auto j: s)
+            {
+                sum+=j;
+                cout<<j<<" ";   
+            }
+        cout<<endl;
+        
+       
+        
+        printf("Case %lld: %lld\n",ca,sum);
         
         
         ca++;
-    
+        
              
     }
 

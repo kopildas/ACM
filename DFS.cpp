@@ -17,7 +17,7 @@ void dfs(int vertex){
     {
         // Take action on child 
         // before entering the child node
-    cout<<"pere "<<vertex<<", child "<<child<<endl;
+        cout<<"pere "<<vertex<<", child "<<child<<endl;
         if(visited[child]) continue;
         
 
@@ -27,7 +27,7 @@ void dfs(int vertex){
 
     }
     // Take action on vertex 
-    // before axiting the vertex
+    // before exiting the vertex
 
 }
 

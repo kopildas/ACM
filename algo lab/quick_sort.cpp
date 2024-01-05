@@ -66,7 +66,7 @@ int main()
         }
 
         quicksort(aray, 0 ,t-1);
-cout<<endl;
+        cout<<endl;
         for (size_t i = 0; i < t; i++)
         {
             cout<<aray[i]<<endl;
